@@ -13,14 +13,17 @@
     <label for="first_name">Input Your First Name: <input name="first_name" id="first_name" type="text" required /></label>
     <label for="last_name">Input Your Last Name: <input name="last_name" type="text" required /></label>
     <label for="email">Enter Your Email: <input name="email" type="email" id="email required /></label>
-    <label for="password">Create New Password: <input name="password" type="password" id="password" required />
+    <label for="password">Create New Password: <input name="password" type="password" id="password" pattern="[1-z0-5{8,}]" required />
    </fieldset>
    <fieldset>
     <legend>Account Type (Required)</legend>
     <label for="personal-account">Personal Account<input type="radio" name="account-type" id="personal-account" class="inline" checked></label>
     <label for="business-account">Business Account<input type="radio" name="account-type" id="business-account" class="inline"></label>
    </fieldset>
-   <fieldset></fieldset>
+   <fieldset>
+    <label for="profile-picture">Upload A Profile Picture:<input type="file" name="profile-picture" id="profile-picture"></label>
+    <label for="age">Enter Your Age:<input id="age" name="age" min="13" max="120" name="age" /></label>
+   </fieldset>
 
   </form>
  </body>
