@@ -9,6 +9,6 @@ body{
   }
 
 h1, p{
-  1em auto;
+  margin: 1em auto;
   text-align: center;
 }
